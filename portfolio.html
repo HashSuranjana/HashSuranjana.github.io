@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hash</title>
+    <link rel="stylesheet" href="portfolio.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Add this in the head section of your HTML -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+</head>
+
+<body>
+
+    <div class="top-bar" id="topBar"></div>
+
+    <div class="container">
+        <!-- Navigation -->
+            <div class="navbar">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="#">Resume</a>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+            </div>
+
+            <div  id="hero" class="hero">
+                <h4>Welcome to my Portfolio</h4><br>
+                <h5>I am a <span class="typing"></span></h5>
+            </div>
+        </nav>
+
+        <!-- About Me Section -->
+        <section id="about" class="about">
+                
+            <div class="about-container">
+                <h2>About Me</h2>
+                 
+                <div class="profile-photo">
+                   
+                    <img src="image.png.jpg" alt="Hash-photo">
+                
+                </div>
+                
+                <div>
+                    <p>Hello Guys ! I'm a passionate 22 years old undergraduate from Down South, SriLanka. Currently I am reading my degree at Informatics Institute of Technology (IIT) affiliated with University of Westminster. Eager to contribute my skills and creativity through an internship. From this portfolio showcase it is reflecting my projects and coding challanges. </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+
+            <h2>Projects</h2>
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <img src="https://picsum.photos/id/100/50/50" alt="Project 1">
+                <div class="project-details">
+                    <h3>Project 1</h3>
+                    <p>Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <img src="https://picsum.photos/id/50/50/50" alt="Project 2">
+                <div class="project-details">
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+            </div>
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <img src="https://picsum.photos/id/50/50/50" alt="Project 2">
+                <div class="project-details">
+                    <h3>Project 3</h3>
+                    <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+            </div>
+            <!-- Project Card 4 -->
+            <div class="project-card">
+                <img src="https://picsum.photos/id/50/50/50" alt="Project 2">
+                <div class="project-details">
+                    <h3>Project 4</h3>
+                    <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+            </div>
+            <!-- Project Card 5 -->
+            <div class="project-card">
+                <img src="https://picsum.photos/id/1/50/50" alt="Project 2">
+                <div class="project-details">
+                    <h3>Project 5</h3>
+                    <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+            </div>
+            <!-- Add more project cards as needed -->
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <h3>Feel Free to Reach Out Me !</h3>
+
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://www.instagram.com/your_instagram_username" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/your_facebook_username" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/your_linkedin_username" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/your_github_username" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+            <!-- Email -->
+            <div class="email">
+                <p>Email: <a href="mailto:hasithasuranjana12@gmail.com">hasithasuranjana12@gmail.com</a></p>
+            </div>
+        </section>
+
+
+        <!-- Footer Section -->
+        <footer>   
+                <p>&copy; 2023 Hash. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Optional: Add a smooth scroll effect using JavaScript -->
+    <script>
+
+        function myFunction() {
+        var x = document.getElementsByClassName("navbar");
+        if (x.className === "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        document.addEventListener('scroll', function () {
+        // Calculate the scroll position as a percentage of the total scroll height
+        const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+
+        // Update the width of the top bar as the scroll percentage
+        document.getElementById('topBar').style.width = `${scrollPercentage}%`;
+
+        // Calculate the red component of the RGB color based on the scroll percentage
+        const redValue = Math.min(255, Math.round((scrollPercentage / 100) * 255));
+
+        // Update the background color of the top bar
+        document.getElementById('topBar').style.backgroundColor = `rgb(0, 255, 0)`;
+    });
+
+    var typed = new Typed(".typing",{
+      strings: ["Frontend Developer.","Mobile App Developer."],
+      typeSpeed:150,
+      backSpeed:120,
+      loop:true
+    })
+    
+    </script>
+
+</body>
+
+</html>
