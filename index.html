@@ -13,6 +13,7 @@
     
     <!-- Add this in the head section of your HTML -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
 </head>
@@ -21,144 +22,133 @@
 
     <div class="top-bar" id="topBar"></div>
 
-    <div class="container">
-        <!-- Navigation -->
-            <div class="navbar">
-                <a href="#hero">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-                <a href="#">Resume</a>
-
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                  </a>
+    <header>
+        <div class="navbar">
+            <div class="name"><a href="#">Portfolio.</a></div>
+            <ul class="links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contact Me</a></li>
+                <li><a href="#">Resume</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa fa-bars"></i>
             </div>
+        </div>
 
-            <div  id="hero" class="hero">
-                <h4>Welcome to my Portfolio</h4><br>
-                <h5>I am a <span class="typing"></span></h5>
-            </div>
-        </nav>
+        <div class="dropdown-menu">
+            <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contact ME</a></li>
+                <li><a href="#">Resume</a></li>
+        </div>
+    </header>
 
-        <!-- About Me Section -->
-        <section id="about" class="about">
-                
-            <div class="about-container">
-                <h2>About Me</h2>
-                 
-                <div class="profile-photo">
-                   
-                    <img src="image.png.jpg" alt="Hash-photo">
-                
-                </div>
-                
-                <div>
-                    <p>Hello Guys ! I'm a passionate 22 years old undergraduate from Down South, SriLanka. Currently I am reading my degree at Informatics Institute of Technology (IIT) affiliated with University of Westminster. Eager to contribute my skills and creativity through an internship. From this portfolio showcase it is reflecting my projects and coding challanges. </p>
-                </div>
-            </div>
-        </section>
+    
 
 
         <!-- Projects Section -->
-        <section id="projects" class="projects">
+    <section id="projects" class="projects">
 
-            <h2>Projects</h2>
-            <!-- Project Card 1 -->
-            <div class="project-card">
-                <img src="https://picsum.photos/id/100/50/50" alt="Project 1">
-                <div class="project-details">
-                    <h3>Project 1</h3>
-                    <p>Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="#" target="_blank">View Project</a>
-                </div>
+        <h2>Projects</h2>
+        <!-- Project Card 1 -->
+        <div class="project-card">
+            <img src="https://picsum.photos/id/100/50/50" alt="Project 1">
+            <div class="project-details">
+                <h3>Project 1</h3>
+                <p>Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" target="_blank">View Project</a>
             </div>
+        </div>
 
-            <!-- Project Card 2 -->
-            <div class="project-card">
-                <img src="https://picsum.photos/id/50/50/50" alt="Project 2">
-                <div class="project-details">
-                    <h3>Project 2</h3>
-                    <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="#" target="_blank">View Project</a>
-                </div>
+        <!-- Project Card 2 -->
+        <div class="project-card">
+            <img src="https://picsum.photos/id/50/50/50" alt="Project 2">
+            <div class="project-details">
+                <h3>Project 2</h3>
+                <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" target="_blank">View Project</a>
             </div>
-            <!-- Project Card 3 -->
-            <div class="project-card">
-                <img src="https://picsum.photos/id/50/50/50" alt="Project 2">
-                <div class="project-details">
-                    <h3>Project 3</h3>
-                    <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="#" target="_blank">View Project</a>
-                </div>
+        </div>
+        <!-- Project Card 3 -->
+        <div class="project-card">
+            <img src="https://picsum.photos/id/50/50/50" alt="Project 2">
+            <div class="project-details">
+                <h3>Project 3</h3>
+                <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" target="_blank">View Project</a>
             </div>
-            <!-- Project Card 4 -->
-            <div class="project-card">
-                <img src="https://picsum.photos/id/50/50/50" alt="Project 2">
-                <div class="project-details">
-                    <h3>Project 4</h3>
-                    <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="#" target="_blank">View Project</a>
-                </div>
+        </div>
+        <!-- Project Card 4 -->
+        <div class="project-card">
+            <img src="https://picsum.photos/id/50/50/50" alt="Project 2">
+            <div class="project-details">
+                <h3>Project 4</h3>
+                <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" target="_blank">View Project</a>
             </div>
-            <!-- Project Card 5 -->
-            <div class="project-card">
-                <img src="https://picsum.photos/id/1/50/50" alt="Project 2">
-                <div class="project-details">
-                    <h3>Project 5</h3>
-                    <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="#" target="_blank">View Project</a>
-                </div>
+        </div>
+        <!-- Project Card 5 -->
+        <div class="project-card">
+            <img src="https://picsum.photos/id/1/50/50" alt="Project 2">
+            <div class="project-details">
+                <h3>Project 5</h3>
+                <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" target="_blank">View Project</a>
             </div>
-            <!-- Add more project cards as needed -->
+        </div>
+        <!-- Add more project cards as needed -->
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <h3>Feel Free to Reach Out Me !</h3>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/your_instagram_username" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/your_facebook_username" target="_blank" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/your_linkedin_username" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/your_github_username" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+
+        <!-- Email -->
+        <div class="email">
+            <p>Email: <a href="mailto:hasithasuranjana12@gmail.com">hasithasuranjana12@gmail.com</a></p>
+        </div>
     </section>
 
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-            <h2>Contact Me</h2>
-            <h3>Feel Free to Reach Out Me !</h3>
-
-            <!-- Social Media Icons -->
-            <div class="social-icons">
-                <a href="https://www.instagram.com/your_instagram_username" target="_blank" title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/your_facebook_username" target="_blank" title="Facebook">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/your_linkedin_username" target="_blank" title="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/your_github_username" target="_blank" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-
-            <!-- Email -->
-            <div class="email">
-                <p>Email: <a href="mailto:hasithasuranjana12@gmail.com">hasithasuranjana12@gmail.com</a></p>
-            </div>
-        </section>
-
-
-        <!-- Footer Section -->
-        <footer>   
-                <p>&copy; 2023 Hash. All rights reserved.</p>
-        </footer>
-    </div>
+    <!-- Footer Section -->
+    <footer>   
+            <p>&copy; 2023 Hash. All rights reserved.</p>
+    </footer>
+</div>
 
     <!-- Optional: Add a smooth scroll effect using JavaScript -->
     <script>
 
-        function myFunction() {
-        var x = document.getElementsByClassName("navbar");
-        if (x.className === "navbar") {
-            x.className += " responsive";
-        } else {
-            x.className = "navbar";
+        const toggleBtn=document.querySelector(".toggle_btn")
+        const toggleBtnIcon=document.querySelector(".toggle_btn i")
+        const dropdownMenu=document.querySelector(".dropdown-menu")
+
+        toggleBtn.onclick = function() {
+            dropdownMenu.classList.toggle("open")
+            const isOpen = dropdownMenu.classList.contains("open")
         }
-        }
+        
 
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {

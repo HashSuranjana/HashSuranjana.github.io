@@ -5,11 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-
-}
-
-.container {
-    max-width: 100%;
 }
 
 body {
@@ -30,113 +25,104 @@ body {
     transition: background-color 0.5s ease, width 0.5s ease; /* Add a smooth transition effect for background color and width */
 }
 
-/* Navigation styles */
+/* Navigation bar styles */
+
+a{
+  color: rgb(255, 252, 252);
+  font-size: 17px;  
+}
+
+a:hover{
+  text-decoration: underline;
+}
+header{
+  position: relative;
+  padding: 0 1rem;
+  background-color: black;
+}
 .navbar{
-    background-color: black;
-    overflow: hidden;
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .name a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navbar .links{
+  display: flex;
+  gap: 4rem;
 }
 
-.navbar a {
-    float:left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    font-size: large;
-    
+.navbar .toggle_btn{
+  color: rgb(249, 249, 249);
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
 }
 
-.navbar a:hover{
-    text-decoration: underline;
+/* Navigation bar dropdown menu */
+
+.dropdown-menu{
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  width: 300px;
+  height: 0;
+  background-color: rgb(239, 152, 39);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.navbar .icon{
+.dropdown-menu.open{
+  height:240px ;
+}
+
+.dropdown-menu li{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+@media (max-width :992px) {
+  .navbar .links{
     display: none;
-}
-
-@media screen and (max-width: 600px) {
-    .navbar a:not(:first-child) {display: none;}
-    .navbar a.icon {
-      float: right;
-      display: block;
-    }
+  }
+  .navbar .toggle_btn{
+    display: block;
+  }
+  .dropdown-menu{
+    display: block;
   }
   
-  @media screen and (max-width: 600px) {
-    .navbar.responsive {position: relative;}
-    .navbar.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
+}
+@media (max-width :576px) {
+  .dropdown-menu{
+    left: 2rem;
+    width: unset;
   }
-
-/* Hero section styles */
-.hero {
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
-    
-    padding: 100px;
-    
-
+  
 }
 
-.hero span {
-    color: rgb(246, 226, 10);
-}
 
-/* About Me section styles */
-.about {
-    padding: 10px 5px;
-    position: relative; /* To allow absolute positioning within this container */
-    background-color: lightgray;
-}
 
-.about-container{
-    padding: 20px 20px;
-    /* background-image: linear-gradient(to right,rgb(185, 131, 240), rgb(241, 98, 241)); */
-    border-radius: 40px;
-    background-image: url("bgimage1.png");
-}
 
-.about-container div:nth-child(3){
 
-    margin-left: 30px;
-    max-width: 50%;
-    text-align: justify;
-    font-size: larger;
-    line-height: 1.5;
-    
-}
 
-.about h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
 
-.profile-photo {
-    position: absolute;
-    top: 80px; /* Adjust the top position as needed */
-    right: 100px; /* Adjust the right position as needed */
-    width: 500px; /* Adjust the width as needed */
-    height: 500px; /* Adjust the height as needed */
-    border-radius: 50%; /* To create a circular shape for the photo */
-    overflow: hidden; /* Hide any overflowing parts of the photo */
-}
 
-.profile-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Maintain aspect ratio while covering the container */
-    border: 2px solid #fbf8f8; /* Optional: Add a border around the photo */
-}
+
+
+
+
 
 .projects {
     padding: 30px ;
@@ -236,17 +222,4 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    nav ul {
-        text-align: center;
-        display: flex;
-    }
-
-    nav ul li {
-        display: flex;
-        margin-bottom: 10px;
-    }
 }
