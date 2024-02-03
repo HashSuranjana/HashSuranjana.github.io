@@ -32,8 +32,10 @@ a{
   font-size: 17px;  
 }
 
-a:hover{
+.links a:hover{
   text-decoration: underline;
+  color: rgb(61, 61, 210);
+  transition-duration: 2s;
 }
 header{
   position: relative;
@@ -44,7 +46,7 @@ header{
   width: 100%;
   height: 60px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 0 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -112,6 +114,160 @@ header{
   
 }
 
+.welcome-note {
+  display: grid;
+  max-width: 1200px;
+  margin: 70px auto 0 50px;
+  padding: 40px 0;
+   
+}
+
+.welcome-note h2 {
+  font-size: 60px;
+  background: linear-gradient(to right, #583ade, #d85ac3);
+  -webkit-background-clip: text; /* For Safari/Chrome */
+  background-clip: text;
+  color: transparent; 
+}
+
+.welcome-note h2:nth-child(2){
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.welcome-note h2:nth-child(2) span{
+  font-size: 45px;
+  margin-left: 12px;
+  text-transform: uppercase;
+}
+
+.welcome-note h4{
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(to right, #583ade, #d85ac3);
+  -webkit-background-clip: text; /* For Safari/Chrome */
+  background-clip: text;
+  color: transparent; 
+}
+
+.welcome-note .typing{
+  background: linear-gradient(to right, #e8ce11, #d85ac3);
+  -webkit-background-clip: text; /* For Safari/Chrome */
+  background-clip: text;
+  color: transparent; 
+}
+
+header .social-icons{
+  margin: 20px auto 0 30px;
+  display:flex;
+  padding: 10px auto;
+  
+}
+header .social-icons a{
+  margin: 0 20px;
+  padding: 0 10px;
+  width: 50px;
+  height: 50px;
+  background-color:rgba(45, 60, 143, 0.3);
+  border-radius: 10px;
+
+  
+}
+header .social-icons a i{
+  color: rgb(151, 151, 218);
+}
+header .social-icons a i:hover{
+  background: radial-gradient(closest-side, darkorange 60%, gold, bisque, darkred 20%, crimson);
+  -webkit-background-clip: text; /* For Safari/Chrome */
+  background-clip: text;
+  color: transparent;
+  transition-duration: 1s;
+}
+
+
+/* About me Section */
+
+.about-me {
+  width: 100%;
+  background-color: rgb(251, 26, 26);
+  margin: 0 auto ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about-me .paragraph{
+  font-size: 18px;
+  background-color: #f0e9f0;
+  display: flex;
+  margin: 50px 10px 0 ;
+  padding: 20px;
+  justify-content: space-between;
+  
+}
+.about-me .paragraph .para{
+  background-color: #d85ac3;
+  border-radius: 10px;
+  margin-right: 10px;
+  flex:1;
+  border: 3px solid rgb(14, 14, 14);
+}
+.about-me .paragraph .para h4{
+  text-decoration: underline;
+  font-size: 30px;
+  margin: 10px;
+  text-transform: capitalize;
+  font-weight: 1000;
+}
+.about-me .paragraph .para p{
+  text-align: justify;
+  margin: 10px;
+}
+
+.about-me .paragraph .hero{
+  flex:1;
+  background-color: #e8ce11;
+}
+
+
+
+.skills-container{
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: #a793a4;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  justify-content: space-between;
+}
+.skills-container h2{
+  text-decoration: underline;
+  font-weight: 800;
+  font-size: 17px;
+}
+.skills-container .tech-skills{
+  flex: 1;
+  display: flex;
+  background-color: #e8ce11;
+  border-radius: 10px;
+  margin-right: 10px;
+
+
+}
+.skills-container .soft-skills{
+  flex: 1;
+  display: flex;
+  background-color: #e8ce11;
+  border-radius: 10px;
+  
+
+}
+
+  
+
+
+
+ 
+  
 
 
 
