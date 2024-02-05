@@ -1,6 +1,8 @@
 /* Reset some default browser styles */
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
 
 *{
     list-style: none;
@@ -275,33 +277,45 @@ section:not([id]) {
   border-radius: 10px;
 }
 .skill-heading{
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
   text-align: center;
   text-decoration: underline;
-  text-underline-offset: 10px;
-  text-decoration-thickness: 4px;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 3px;
   margin-bottom: 40px;
 }
+
 .bar{
   font-size: 21px;
 }
+
 .technical-skill-bars .bar{
   margin-top: 40px 0;
 }
+
 .technical-skill-bars .bar:first-child{
   margin-top: 0;
 }
+
 .technical-skill-bars .bar:last-child{
   margin-bottom: 0;
 }
+
 .technical-skill-bars .bar .info{
   margin-bottom: 0;
 }
+
 .technical-skill-bars .bar .info span{
   font-size: 17px;
-  font-weight: 500;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
   animation: showText 0.5s 1s linear forwards;
   opacity: 0;
 }
+
 .technical-skill-bars .bar .progress-line{
   position: relative;
   border-radius: 10px;
@@ -313,6 +327,7 @@ section:not([id]) {
   transform-origin: left;
   border: 1px solid black;
 }
+
 @keyframes animate{
   100% {
     transform: scaleX(1);
@@ -332,24 +347,31 @@ section:not([id]) {
 .progress-line.python span{
   width: 90%;  
 }
+
 .progress-line.java span{
   width: 85%;  
 }
+
 .progress-line.HTML span{
   width: 90%;  
 }
+
 .progress-line.css span{
   width: 88%;  
 }
+
 .progress-line.js span{
   width: 80%;  
 }
+
 .progress-line.react-js span{
   width: 78%;  
 }
+
 .progress-line.sql span{
   width: 86%;  
 }
+
 .progress-line.kotlin span{
   width: 20%;  
 }
@@ -488,7 +510,10 @@ section:not([id]) {
   left: 52%;
   transform: translate(-50%,50%);
   font-size: 17px;
-  font-weight: 500;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
   animation: showText 0.5s 1s linear forwards;
   opacity: 1;
 }
@@ -501,7 +526,10 @@ section:not([id]) {
   bottom: -5px;
   transform: translate(-100px,15px);
   font-size: 17px;
-  font-weight: 500;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
   animation: showText 0.5s 1s linear forwards;
   opacity: 0;
 }
