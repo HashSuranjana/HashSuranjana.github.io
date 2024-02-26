@@ -62,7 +62,7 @@ header{
   justify-content: space-between;
 }
 
-.navbar .name a {
+.navbar .porfolio-name a {
   font-size: 1.6rem;
   font-weight:900;
 }
@@ -646,8 +646,7 @@ section:not([id]) {
 
   .used-languages img{
     margin-right: 10px;
-    width: 100px;
-    height: 100px;
+    width: 10vh;
     
   }
 
@@ -673,11 +672,7 @@ section:not([id]) {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  background-color: #4158D0;
-  background-image: linear-gradient(315deg, #4158D0 0%, #C850C0 17%, #FFCC70 39%, #dcdf2b 60%, #f9a804 80%, #ffffff 100%);
   width: 100%;
-
 }
 
 .contact-left{
@@ -696,7 +691,7 @@ section:not([id]) {
 
 .contact-left-title hr{
   border: none;
-  width: 120px;
+  width: 130px;
   height: 5px;
   background-color: wheat;
   border-radius: 5px;
@@ -706,10 +701,11 @@ section:not([id]) {
 .contact-input{
   width: 400px;
   height: 50px;
-  border: 2px solid black;
+  border: 1px solid black;
   outline: none;
   padding-left: 25px;
   font-weight: 500;
+  margin-left: 10%;
   color: #fefcfc;
   border-radius: 50px;
 }
@@ -718,14 +714,15 @@ section:not([id]) {
   height: 140px;
   padding-top: 15px;
   border-radius: 20px;
+  margin-left: 10%;
 }
 
 .contact-input:focus{
   border: 2px solid green;
 }
 .contact-input::placeholder{
-  color: #d85ac3;
-  
+  color: black;
+  opacity: 0.5; 
 }
 
 .contact-left button{
@@ -735,6 +732,7 @@ section:not([id]) {
   font-size: 16px;
   color: #000000;
   gap: 10px;
+  margin-left: 10%;
   border: none;
   border-radius: 50px;
   background: linear-gradient(270deg,rgb(234, 168, 168),rgb(227, 116, 116));
@@ -754,9 +752,11 @@ section:not([id]) {
   }
 }
 
-.contact-right{
-  width: 500px;
+.h-captcha{
+  margin-left: 10%;
 }
+
+
 
 @media(max-width:800px){
   .contact-input{
