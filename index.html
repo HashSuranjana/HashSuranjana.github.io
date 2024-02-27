@@ -16,58 +16,39 @@
 </head>
 
 <body>
-    <div class="preloader">
-        <div class="loader_34">
-            <div class="ytp-spinner">
-                <div class="ytp-spinner-container">
-                    <div class="ytp-spinner-rotator">
-                        <div class="ytp-spinner-left">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                        <div class="ytp-spinner-right">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     
-
     <div class="top-bar" id="topBar"></div>
 
     <header>
-
+        <!-- Your SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="position: absolute; top: 0; left: 0; z-index: -1;"><path fill="#a2d9ff" fill-opacity="0.30" d="M0,192L40,170.7C80,149,160,107,240,128C320,149,400,235,480,234.7C560,235,640,149,720,138.7C800,128,880,192,960,208C1040,224,1120,192,1200,165.3C1280,139,1360,117,1400,106.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+    
+        <!-- Your navigation bar -->
         <div class="navbar" id="navbar">
-
             <div class="porfolio-name"><a href="#">Portfolio.</a></div>
-
             <ul class="links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#welcome-note">Home</a></li>
+                <li><a href="#about-me">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contact Me</a></li>
+                <li><a href="#contact-container">Contact Me</a></li>
                 <li><a href="#">Resume</a></li>
             </ul>
-
             <div class="toggle_btn">
                 <i class="fa fa-bars"></i>
-
             </div>
-
         </div>
-
+    
+        <!-- Dropdown menu -->
         <div class="dropdown-menu">
-
-            <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contact ME</a></li>
-                <li><a href="#">Resume</a></li>
-
+            <li><a href="#welcome-note">Home</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact-container">Contact ME</a></li>
+            <li><a href="#">Resume</a></li>
         </div>
+ 
 
-        <div class="welcome-note">
+        <div class="welcome-note" id="welcome-note">
 
             <h2>
                 <span>H</span>
@@ -80,6 +61,10 @@
             <h2>I am <span>Hasitha Suranjana</span></h2>
             <h4>I am a <span class="typing"></span></h4>
 
+        </div>
+
+        <div class="header-image">
+            <img src="Resources/hero.jpg" alt="">
         </div>
 
         <div class="social-icons">
@@ -101,6 +86,7 @@
             </a>
 
         </div>
+        
 
     </header>
 
@@ -280,7 +266,7 @@
 
 <section>
 
-    <div class="contact-container">
+    <div class="contact-container" id="contact-container">
         
         <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
            

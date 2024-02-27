@@ -18,7 +18,10 @@ body {
     line-height: 1.6;
     background-color: #fefcfc;
     color: #333;
+    background-color: rgb(224, 224, 252);
 }
+
+
 
 /* Top bar styles */
 .top-bar {
@@ -35,10 +38,12 @@ body {
 
 header a{
   font-family:  "Old Standard TT", serif;
-  color: rgb(255, 252, 252);
+  color: rgb(10, 10, 10);
   font-size: 18px;
   font-weight: 800;  
 }
+
+
 
 .links a:hover{
   text-decoration: underline;
@@ -49,10 +54,11 @@ header{
   position: relative;
   padding: 15px 1rem;
   height: 100vh;
-  background-image: linear-gradient(303deg, #000000 0%, #151414 17%, #636567 20%, #040404 60%, #0a0a0a 80%, #0d0c0c 100%);
+  /* background-image: linear-gradient(303deg, #000000 0%, #151414 17%, #636567 20%, #040404 60%, #0a0a0a 80%, #0d0c0c 100%); */
 }
 
 .navbar{
+  
   width: 100%;
   height: 60px;
   max-width: 1200px;
@@ -60,6 +66,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 3;
 }
 
 .navbar .porfolio-name a {
@@ -73,7 +80,7 @@ header{
 }
 
 .navbar .toggle_btn{
-  color: rgb(249, 249, 249);
+  color: rgb(7, 7, 7);
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
@@ -129,7 +136,7 @@ header{
 .welcome-note {
   display: grid;
   max-width: 1200px;
-  margin: 70px auto 0 50px;
+  margin: 120px auto 0 50px;
   padding: 40px 0;
    
 }
@@ -175,6 +182,27 @@ header{
   color: transparent; 
 }
 
+.header-image{
+  transform: translate(900px,-380px);
+
+  width: 500px;
+  height: 500px;
+  background-color: #031540;  
+  border-radius:50% ;
+  border: 5px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* outline: 15px solid #031540; */
+}
+
+.header-image img{
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+
 header .social-icons{
   margin: 20px auto 0 30px;
   display:flex;
@@ -216,7 +244,7 @@ header .social-icons a i:hover{
   justify-content: space-between;
   align-items: center;
   padding: 100px 10%;
-  height: 100vh;
+
 }
 .hero{
   width: 400px;
