@@ -1,0 +1,38 @@
+@media (max-width :992px) {
+    .navbar .links{
+      display: none;
+    }
+    .navbar .toggle_btn{
+      display: block;
+    }
+    .dropdown-menu{
+      display: block;
+    }
+    
+  }
+  @media (max-width :576px) {
+    .dropdown-menu{
+      left: 2rem;
+      width: unset;
+    }
+    
+  }
+
+
+  @media(max-width:800px){
+    .contact-input{
+      width: 80vw;
+    }
+    .contact-right{
+      display: none;
+    }
+  }
+  
+  
+  /* Footer section styles */
+  footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+  }
