@@ -1,38 +1,131 @@
-@media (max-width :992px) {
-    .navbar .links{
-      display: none;
-    }
-    .navbar .toggle_btn{
-      display: block;
-    }
-    .dropdown-menu{
-      display: block;
-    }
-    
-  }
-  @media (max-width :576px) {
-    .dropdown-menu{
-      left: 2rem;
-      width: unset;
-    }
-    
+:root {
+  --bg-color: #FFFFFF;
+  --text-color: #000;
+  --second-color: #a09dab;
+  --main-color: #f75023;
+  --big-font: 5rem;
+  --h2-font: 3rem;
+  --p-font: 1.1rem;
+}
+
+@media (max-width:1425px) {
+  header{
+    padding: 16px 3%;
+    transition: .3s;
   }
 
+  header .sticky{
+    padding: 10px 3%;
+    transition: .3s;
+  }
 
-  @media(max-width:800px){
-    .contact-input{
-      width: 80vw;
-    }
-    .contact-right{
-      display: none;
-    }
+  section{
+    padding: 70px 3%;
+    transition: .3s;
+  }
+
+  .contact-container{
+    width: 95%;
+    transition: .3s;
+  }
+
+  :root{
+    --big-font: 4rem;
+    --h2-font: 2.3rem;
+    --p-font: 1rem;
+    transition: .3s;
+  }
+}
+
+@media (max-width:970px) {
+
+  #menu-icon{
+    display: block;
+  }
+
+  .home{
+    min-height: 80vh;
+  }
+
+  .navlist{
+    position: absolute;
+    top: -600px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--main-color);
+    text-align: right;
+    transition: all .40s;
+  }
+
+  .navlist a{
+    display: block;
+    padding: 1.2rem;
+    margin: 1.5rem;
+    border-right: 2px solid var(--bg-color);
+    color: var(--bg-color);
+  }
+
+  .navlist a:hover{
+    background: var(--bg-color);
+    color: var(--main-color);
+  }
+
+  .navlist a::after{
+    display: none;
+  }
+
+  .navlist.active{
+    top: 100%;
+  }
+}
+
+@media (max-width:800px) {
+
+  .home{
+    grid-template-columns: 1fr;
+    min-height: 130vh;
+    grid-gap: 1rem;
+  }
+
+  .home-text{
+    padding-top: 55px;
+  }
+
+  .home-img{
+    text-align: center;
+  }
+
+  .home-img img{
+    width: 440px;
+    height: auto;
+  }
+
+  .about{
+    grid-template-columns: 1fr;
+  }
+
+  .about-img{
+    text-align: center;
+    margin-bottom: 30px;
   }
   
-  
-  /* Footer section styles */
-  footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 10px 0;
+  :root{
+    --big-font: 3.4rem;
+    --h2-font: 2rem;
   }
+
+  section{
+    padding: 65px 3%;
+    transition: .3s;
+  }
+}
+
+@media (max-width:540px) {
+
+  .contact .action form input{
+    width: 310px;
+  }
+  
+}
+

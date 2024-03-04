@@ -1,281 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hash</title>
     <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="Responsive.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--font-awesome link-->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> <!--Java script library for typing animation-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
-
 </head>
 
 <body>
-    
+
     <div class="top-bar" id="topBar"></div>
 
-    <header>
-        <!-- Your SVG -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="position: absolute; top: 0; left: 0; z-index: -1;"><path fill="#a2d9ff" fill-opacity="0.30" d="M0,192L40,170.7C80,149,160,107,240,128C320,149,400,235,480,234.7C560,235,640,149,720,138.7C800,128,880,192,960,208C1040,224,1120,192,1200,165.3C1280,139,1360,117,1400,106.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="position: absolute; top: 0; left: 0; z-index: -1;"><path fill="#a2d9ff" fill-opacity="0.30" d="M0,192L40,170.7C80,149,160,107,240,128C320,149,400,235,480,234.7C560,235,640,149,720,138.7C800,128,880,192,960,208C1040,224,1120,192,1200,165.3C1280,139,1360,117,1400,106.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
     
-        <!-- Your navigation bar -->
-        <div class="navbar" id="navbar">
-            <div class="porfolio-name"><a href="#">Portfolio.</a></div>
-            <ul class="links">
-                <li><a href="#welcome-note">Home</a></li>
-                <li><a href="#about-me">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact-container">Contact Me</a></li>
-                <li><a href="#">Resume</a></li>
-            </ul>
-            <div class="toggle_btn">
-                <i class="fa fa-bars"></i>
-            </div>
-        </div>
-    
-        <!-- Dropdown menu -->
-        <div class="dropdown-menu">
-            <li><a href="#welcome-note">Home</a></li>
-            <li><a href="#about-me">About</a></li>
+    <header id="top">
+        <a href="#" class="logo"><h4>Portfolio</h4></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About ME</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact-container">Contact ME</a></li>
-            <li><a href="#">Resume</a></li>
-        </div>
- 
+            <li><a href="#contact">Contact ME</a></li>
+        </ul>
 
-        <section class="home-screen">
-            <div class="welcoming">
-
-                <div class="welcome-note" id="welcome-note">
-    
-                    <h2>
-                        <span>H</span>
-                        <span>e</span>
-                        <span>l</span>
-                        <span>l</span>
-                        <span>0</span>
-                        <span>.</span>
-                    </h2>
-                    <h2>I am <span>Hasitha Suranjana</span></h2>
-                    <h4>I am a <span class="typing"></span></h4>
-        
-                </div>
-        
-                <div class="social-icons">
-        
-                    <a href="https://www.facebook.com/your_facebook_username" target="_blank" title="Facebook">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-        
-                    <a href="https://www.instagram.com/your_instagram_username" target="_blank" title="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-        
-                    <a href="https://www.linkedin.com/in/hasitha-suranjana-b3b64a244/" target="_blank" title="LinkedIn">
-                        <i class="fab fa-linkedin" ></i>
-                    </a>
-        
-                    <a href="https://github.com/HashSuranjana" target="_blank" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-        
-                </div>
-                
-            </div>
-    
-            <div class="header-image">
-                <img src="Resources/hero.png" alt="">
-            </div>
-
-        </section>
-        
 
     </header>
 
-    <section class="about-me" id="about-me">
+    <section class="home" id="home">
 
-        <div class="paragraph-1">
-            <h3>About Me</h3>
-            <p></p>
+        <div class="home-text">
+
+            <h3>HEllo !</h3>
+            <h1>I am Hasitha Suranjana</h1>
+            <h2>I am a <span class="typing"></span></h2>
+            <p>Greetings! I am currently undergraduate student at Informatics Institute of Technology (IIT) SriLanka affiliated with University of Westminster. I am reading my degree BSc(Hons) Computer Science. </p>
+
+            <div class="social-icons">
+                <a href="https://web.facebook.com/hasithasuranjana.wijesinghe"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/su_ran_ja_na?igsh=ZDF2MWZtbjBkNTVo"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/hasitha-suranjana-b3b64a244/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/HashSuranjana"><i class='bx bxl-github'></i></a>
+            </div>
+
+            <a href="sql_intermediate certificate.pdf" target="_blank"  class="btn">RESUME</a>
+
         </div>
 
-        <div class="paragraph-2">
-
-
-            <h3>Hi there! I am Hasitha Suranjana</h3>
-            <p><span>A</span> passionate software developer dedicated to crafting innovative solutions that solve real-world problems. With a keen eye for detail and a strong foundation in python and Java. I thrive on turning complex ideas into elegant, user-friendly applications. My journey into the world of programming began when i was 18 yrs old. Since then, I've been on an exciting path of continuous learning and growth, constantly seeking out new challenges and opportunities to expand my skills. Whether it's building scalable web applications, developing mobile apps, or diving into machine learning algorithms, I'm driven by a relentless pursuit of excellence and a desire to make a positive impact through technology. Outside of coding, you can find me travelling, swimming always eager to explore new horizons and embrace the beauty of lifelong learning. Let's connect and collaborate on turning your ideas into reality !</p>
-
-            
+        <div class="home-img">
+            <img src="Resources/hero4.png" alt="heroImage">
         </div>
 
     </section>
 
-    
-
-    <section class="section">
-
-        <div class="skill-set">
-
-            
-            <h2 class="skill-heading">Coding Skills</h2>
-                
-            <div class="technical-skill-bars">
-                    
-                <div class="bar">
-                    <div class="info"> <Span>Python</Span></div>
-                    <div class="progress-line python"><span></span></div>
-                </div>
-
-                <div class="bar">
-                    <div class="info"> <Span>Java</Span></div>
-                    <div class="progress-line java"><span></span></div>
-                </div>
-
-                <div class="bar">
-                    <div class="info"> <Span>HTML</Span></div>
-                    <div class="progress-line HTML"><span></span></div>
-                </div>
-
-                <div class="bar">
-                    <div class="info"> <Span>CSS</Span></div>
-                    <div class="progress-line css"><span></span></div>
-                </div>
-                
-                <div class="bar">
-                    <div class="info"> <Span>Java Script</Span></div>
-                    <div class="progress-line js"><span></span></div>
-                </div>
-
-                <div class="bar">
-                    <div class="info"> <Span>React JS</Span></div>
-                    <div class="progress-line react-js"><span></span></div>
-                </div>
-
-                <div class="bar">
-                    <div class="info"> <Span>SQL</Span></div>
-                    <div class="progress-line sql"><span></span></div>
-                </div>
-
-                <div class="bar">
-                    <div class="info"> <Span>Kotlin</Span></div>
-                    <div class="progress-line kotlin"><span></span></div>
-                </div>
-                    
+    <section class="about" id="about">
+        <div class="main">
+            <div class="currentplaying">
+              <svg viewBox="0 0 640 512" height="1em" xmlns="http://www.w3.org/2000/svg" fill="#ff8800" class="soundcloud"><path d="M111.4 256.3l5.8 65-5.8 68.3c-.3 2.5-2.2 4.4-4.4 4.4s-4.2-1.9-4.2-4.4l-5.6-68.3 5.6-65c0-2.2 1.9-4.2 4.2-4.2 2.2 0 4.1 2 4.4 4.2zm21.4-45.6c-2.8 0-4.7 2.2-5 5l-5 105.6 5 68.3c.3 2.8 2.2 5 5 5 2.5 0 4.7-2.2 4.7-5l5.8-68.3-5.8-105.6c0-2.8-2.2-5-4.7-5zm25.5-24.1c-3.1 0-5.3 2.2-5.6 5.3l-4.4 130 4.4 67.8c.3 3.1 2.5 5.3 5.6 5.3 2.8 0 5.3-2.2 5.3-5.3l5.3-67.8-5.3-130c0-3.1-2.5-5.3-5.3-5.3zM7.2 283.2c-1.4 0-2.2 1.1-2.5 2.5L0 321.3l4.7 35c.3 1.4 1.1 2.5 2.5 2.5s2.2-1.1 2.5-2.5l5.6-35-5.6-35.6c-.3-1.4-1.1-2.5-2.5-2.5zm23.6-21.9c-1.4 0-2.5 1.1-2.5 2.5l-6.4 57.5 6.4 56.1c0 1.7 1.1 2.8 2.5 2.8s2.5-1.1 2.8-2.5l7.2-56.4-7.2-57.5c-.3-1.4-1.4-2.5-2.8-2.5zm25.3-11.4c-1.7 0-3.1 1.4-3.3 3.3L47 321.3l5.8 65.8c.3 1.7 1.7 3.1 3.3 3.1 1.7 0 3.1-1.4 3.1-3.1l6.9-65.8-6.9-68.1c0-1.9-1.4-3.3-3.1-3.3zm25.3-2.2c-1.9 0-3.6 1.4-3.6 3.6l-5.8 70 5.8 67.8c0 2.2 1.7 3.6 3.6 3.6s3.6-1.4 3.9-3.6l6.4-67.8-6.4-70c-.3-2.2-2-3.6-3.9-3.6zm241.4-110.9c-1.1-.8-2.8-1.4-4.2-1.4-2.2 0-4.2.8-5.6 1.9-1.9 1.7-3.1 4.2-3.3 6.7v.8l-3.3 176.7 1.7 32.5 1.7 31.7c.3 4.7 4.2 8.6 8.9 8.6s8.6-3.9 8.6-8.6l3.9-64.2-3.9-177.5c-.4-3-2-5.8-4.5-7.2zm-26.7 15.3c-1.4-.8-2.8-1.4-4.4-1.4s-3.1.6-4.4 1.4c-2.2 1.4-3.6 3.9-3.6 6.7l-.3 1.7-2.8 160.8s0 .3 3.1 65.6v.3c0 1.7.6 3.3 1.7 4.7 1.7 1.9 3.9 3.1 6.4 3.1 2.2 0 4.2-1.1 5.6-2.5 1.7-1.4 2.5-3.3 2.5-5.6l.3-6.7 3.1-58.6-3.3-162.8c-.3-2.8-1.7-5.3-3.9-6.7zm-111.4 22.5c-3.1 0-5.8 2.8-5.8 6.1l-4.4 140.6 4.4 67.2c.3 3.3 2.8 5.8 5.8 5.8 3.3 0 5.8-2.5 6.1-5.8l5-67.2-5-140.6c-.2-3.3-2.7-6.1-6.1-6.1zm376.7 62.8c-10.8 0-21.1 2.2-30.6 6.1-6.4-70.8-65.8-126.4-138.3-126.4-17.8 0-35 3.3-50.3 9.4-6.1 2.2-7.8 4.4-7.8 9.2v249.7c0 5 3.9 8.6 8.6 9.2h218.3c43.3 0 78.6-35 78.6-78.3.1-43.6-35.2-78.9-78.5-78.9zm-296.7-60.3c-4.2 0-7.5 3.3-7.8 7.8l-3.3 136.7 3.3 65.6c.3 4.2 3.6 7.5 7.8 7.5 4.2 0 7.5-3.3 7.5-7.5l3.9-65.6-3.9-136.7c-.3-4.5-3.3-7.8-7.5-7.8zm-53.6-7.8c-3.3 0-6.4 3.1-6.4 6.7l-3.9 145.3 3.9 66.9c.3 3.6 3.1 6.4 6.4 6.4 3.6 0 6.4-2.8 6.7-6.4l4.4-66.9-4.4-145.3c-.3-3.6-3.1-6.7-6.7-6.7zm26.7 3.4c-3.9 0-6.9 3.1-6.9 6.9L227 321.3l3.9 66.4c.3 3.9 3.1 6.9 6.9 6.9s6.9-3.1 6.9-6.9l4.2-66.4-4.2-141.7c0-3.9-3-6.9-6.9-6.9z"></path></svg>
+              <p class="heading">Currently Playing</p>
             </div>
-        </div>
-        
-    
-          
-        
-    </section>    
-    
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-
-        <h2>Projects</h2>
-        <h3 id="">A small Collection <br>of my Projects </h3>
-        
-        <div class="project-items">
-            
-            <div class="project-card">
-
-                <div class="project-card-image">
-                    <img src="Images/1.avif" alt="Project 1">
-                </div>
-                <div class="project-details">
-                    <h3>E-Commerce Website</h3>
-                    <p>Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    
-                </div>
-
-                <div class="used-languages">
-                    <img src="Resources/react.png" alt="react-photo">
-                    <img src="Resources/postman.png" alt="postman-photo">
-                </div>
-                <a href="https://react-project-pink-eta.vercel.app/" target="_blank">View Project</a>
+            <div class="loader">
+              <div class="song">
+                <p class="name">Time in a Bottle</p>
+                <p class="artist">Jim Corce</p>
+              </div>
+              <div class="albumcover"></div>
+              <div class="loading">
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
+              </div>
             </div>
-    
-            <div class="project-card">
-                
-                <div class="project-card-image">
-                    <img src="Images/2.jpg" alt="Project 1">
-                </div>
-                <div class="project-details">
-                    <h3>Portfolio</h3>
-                    <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                
-                <div class="used-languages">
-                    <img src="Resources/html.png" alt="html5-photo">
-                    <img src="Resources/css.png" alt="css-photo">
-                    <img src="Resources/javas.png" alt="js-photo">
-                </div>
-                <a href="#navbar" target="_blank">View Project</a>
+            <div class="loader">
+              <div class="song">
+                <p class="name">My Way</p>
+                <p class="artist">Frank Sinatra</p>
+              </div>
+              <div class="albumcover"></div>
+              <div class="play"></div>
             </div>
-
-            <div class="project-card">
-                
-                <div class="project-card-image">
-                    <img src="Images/3.jpg" alt="Project 1">
-                </div>
-                <div class="project-details">
-                    <h3>Westmister Shopping Manager</h3>
-                    <p>Description of Project 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                
-                <div class="used-languages">
-                    <img src="Resources/java.png" alt="java-photo">
-                </div>
-                <a href="https://github.com/HashSuranjana/Westminster-Shopping" target="_blank">View Project</a>
+            <div class="loader">
+              <div class="song">
+                <p class="name">Lemon Tree</p>
+                <p class="artist">Fools Garden</p>
+              </div>
+              <div class="albumcover"></div>
+              <div class="play"></div>
             </div>
+          </div>
 
+        <div class="about-text">
+            <h3>I am a Software Developer</h3>
+            <h2>Coding .. Coding .. Coding</h2>
+            <p>Hello Again ! You can send me an email if you are interested in my works and wanna hire me.Simply tap on the button below. </p>
+
+            <a href="#" class="btn">Hire Me</a>
         </div>
 
-</section>
+    </section>
+    
+    <section class="projects" id="projects">
+        <div class="heading">
+            <h3>Projects</h3>
+            <h2>A small Collection of my Projects.</h2>
+        </div>
 
-<section>
-
-    <div class="contact-container" id="contact-container">
-        
-        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-           
-            <div class="contact-left-title">
-                <h2>Get in Touch</h2>
-                <hr>
+        <div class="project-content">
+            <div class="row">
+                <div class="s s-one">
+                    <a href=""><img src="Resources/projects.jpeg" alt="EDM-Oven"></a>
+                </div>
+                <h3>EDM OVEN</h3>
+                <p>This an e-commerce website done for my web development module courswork with 5 other members. HTML , CSS ,Java Script languages are used to create this website.</p>
             </div>
-            <input type="hidden" name="access_key" value="7c5961b3-742d-4b41-a1ad-2aca737a8f5a">
-            <input type="text" name="name" placeholder="Enter Your Name" class="contact-input" required>
-            <input type="email" name="email" placeholder="Enter Your Email" class="contact-input" required>
-            <textarea name="message" placeholder="What are u Thinking of ?" class="contact-input required"></textarea>
-            <div class="h-captcha" data-captcha="true"></div>
+            <div class="row">
+                <div class="s s-two">
+                    <a href=""><img src="Resources/projects.jpeg" alt="Sound-Sculpt"></a>
+                </div>
+                <h3>Sound Sculpt</h3>
+                <p>This is a software implementation to correct the sound coloration. Node JS, Kotlin, React JS, SQL are used for developing this project.</p>
+            </div>
+            <div class="row">
+                <div class="s s-three">
+                    <a href="https://react-project-pink-eta.vercel.app/" target="_blank"><img src="Resources/projects.jpeg" alt="Estate-Agents"></a>
+                </div>
+                <h3>REact webpage</h3>
+                <p>This is a web application to search Houses,Apartments and Lodges and also buy them if the user wants. This project has done using React JS.</p>
+            </div>
+            <div class="row">
+                <div class="s s-four">
+                    <a href="#top"><img src="Resources/projects.jpeg" alt="portfolio"></a>
+                </div>
+                <h3>Portfolio Website</h3>
+                <p>This Website.</p>
+        </div>
+    </section>
 
-            <button type="submit">Submit <i class="fa-sharp fa-solid fa-arrow-right-long"></i></button>
+    <section class="cta">
+        <div class="heading">
+            <h2>My technical Skill Palette </h2>
+        </div>
 
-        </form>
+        <div class="cta-box">
+            <div class="wrap one">
+                <i class='bx bxl-python'></i>      
+            </div>
+            <div class="wrap two">
+                <i class='bx bxl-html5'></i>
+            </div>
+            <div class="wrap three">
+                <i class='bx bxl-css3'></i>
+            </div>
+            <div class="wrap four">
+                <i class='bx bxl-javascript' ></i>
+            </div>
+            <div class="wrap five">
+                <i class='bx bxl-react' ></i>
+            </div>
+            <div class="wrap six">
+                <i class='bx bxl-java' ></i>
+            </div>
+            <div class="wrap seven">
+                <i class='bx bxl-git'></i>
+            </div>
+        </div>
+    </section>
 
-    </div>
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="center">
+                <h3>Get in Touch</h3>
+            </div>
+            <hr>
 
-    <div class="contact-right">
-        <!-- <img src="Resources/postman.png" alt=""> -->
-    </div>
-</section>
+            <div class="action">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="7c5961b3-742d-4b41-a1ad-2aca737a8f5a">
+                    <input type="text" name="name" id="name-input" placeholder="Enter Your Name " required>
+                    <input type="email" name="email" id="email-input" placeholder="Enter your Email" required>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="What's on your mind ?" required></textarea>
+                    <br><input type="submit" name="submit" value="SEND">
+                </form>
+            </div>
+        </div>
+    </section>
 
-
-<!-- Footer Section -->
-<footer>   
+    <footer>   
         <p>&copy; 2023 Hash. All rights reserved. This website is hosted with github Pages</p>
-</footer>
+    </footer>
 
-<script src="portfolio.js"></script>
-<script src="https://web3forms.com/client/script.js" async defer></script>
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script src="portfolio.js"></script>
+    
 </body>
-
 </html>
