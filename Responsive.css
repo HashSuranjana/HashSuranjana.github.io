@@ -158,3 +158,17 @@
   
 }
 
+@media (max-width:400px) {
+
+
+  .contact .action form input[type="text"],
+  .contact .action form input[type="email"]
+  {
+    width: 280px;
+  }
+
+  .contact .action form textarea {
+    width: 280px;
+  }
+  
+}
