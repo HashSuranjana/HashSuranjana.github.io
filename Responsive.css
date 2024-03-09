@@ -78,6 +78,16 @@
   .navlist.active{
     top: 100%;
   }
+
+  .contact .action form input[type="text"],
+  .contact .action form input[type="email"]
+  {
+    width: 600px;
+  }
+
+  .contact .action form textarea {
+    width: 600px;
+  }
 }
 
 @media (max-width:800px) {
@@ -119,12 +129,31 @@
     padding: 65px 3%;
     transition: .3s;
   }
+
+  .contact .action form input[type="text"],
+  .contact .action form input[type="email"]
+  {
+    width: 500px;
+  }
+
+  .contact .action form textarea {
+    width: 500px;
+  }
+
+  
 }
 
 @media (max-width:540px) {
 
-  .contact .action form input{
-    width: 310px;
+
+  .contact .action form input[type="text"],
+  .contact .action form input[type="email"]
+  {
+    width: 320px;
+  }
+
+  .contact .action form textarea {
+    width: 320px;
   }
   
 }
