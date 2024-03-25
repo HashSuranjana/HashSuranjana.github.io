@@ -172,6 +172,21 @@
   
 }
 
+@media (max-width:539px) {
+
+
+  .contact .action form input[type="text"],
+  .contact .action form input[type="email"]
+  {
+    width: 280px;
+  }
+
+  .contact .action form textarea {
+    width: 280px;
+  }
+  
+}
+
 @media (max-width:400px) {
 
 
@@ -183,6 +198,19 @@
 
   .contact .action form textarea {
     width: 280px;
+  }
+  
+}
+
+@media (max-width:399px) {
+  .contact .action form input[type="text"],
+  .contact .action form input[type="email"]
+  {
+    width:250px;
+  }
+
+  .contact .action form textarea {
+    width: 250px;
   }
   
 }
